@@ -1,0 +1,20 @@
+meta {
+  name: facilities-structureNumbers-5254450-01-structureNumbers-5190363-01
+  type: http
+  seq: 3
+}
+
+post {
+  url: https://{{Stage}}/api/facilities?structureNumbers=5466288-01&structureNumbers=5158702-04
+  body: none
+  auth: bearer
+}
+
+params:query {
+  structureNumbers: 5466288-01
+  structureNumbers: 5158702-04
+}
+
+auth:bearer {
+  token: {{Bearer}}
+}

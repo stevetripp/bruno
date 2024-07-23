@@ -1,0 +1,32 @@
+meta {
+  name: issues-search
+  type: http
+  seq: 2
+}
+
+post {
+  url: https://{{Stage}}/api/v2/issues/search
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{Bearer}}
+}
+
+body:json {
+  {
+      "sort": "create",
+      "ascending": false,
+      "pageNumber": 1,
+      "pageSize": 1000,
+      "searchString": null,
+      "reportedByName": null,
+      "structureNumbers": null,
+      "observedAfter": null,
+      "createdByCurrentUser": null,
+      "statusIds": [],
+      "typeId": null,
+      "timeStamp": 1680292906
+  }
+}

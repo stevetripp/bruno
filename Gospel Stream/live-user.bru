@@ -1,0 +1,20 @@
+meta {
+  name: live-user
+  type: http
+  seq: 2
+}
+
+get {
+  url: https://gospel-stream-service.churchofjesuschrist.org/stream/live/user?includeYoutubeOnlyEvents=true&lang=eng
+  body: none
+  auth: bearer
+}
+
+params:query {
+  includeYoutubeOnlyEvents: true
+  lang: eng
+}
+
+auth:bearer {
+  token: {{Oauth Token}}
+}

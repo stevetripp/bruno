@@ -1,0 +1,22 @@
+meta {
+  name: search
+  type: http
+  seq: 2
+}
+
+post {
+  url: https://{{Stage}}/api/facilities/search
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{Bearer}}
+}
+
+body:json {
+  {
+      "searchString": "5090539-03",
+      "timeStamp": 1680023712
+  }
+}

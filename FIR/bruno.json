@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "FIR",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

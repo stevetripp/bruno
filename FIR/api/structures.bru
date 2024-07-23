@@ -1,0 +1,22 @@
+meta {
+  name: structures
+  type: http
+  seq: 4
+}
+
+post {
+  url: https://{{Stage}}/api/structures
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{Bearer}}
+}
+
+body:json {
+  [
+      "5466288-01",
+      "5158702-04"
+  ]
+}

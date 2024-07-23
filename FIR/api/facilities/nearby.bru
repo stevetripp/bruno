@@ -1,0 +1,26 @@
+meta {
+  name: nearby
+  type: http
+  seq: 1
+}
+
+post {
+  url: https://{{Stage}}/api/facilities/nearby
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{Bearer}}
+}
+
+body:json {
+  {
+      "coordinates": {
+          "latitude": 40.5045045045045,
+          "longitude": -111.84914376655917
+      },
+      "milesAway": null,
+      "maxCount": null
+  }
+}

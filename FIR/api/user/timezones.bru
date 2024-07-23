@@ -1,0 +1,15 @@
+meta {
+  name: timezones
+  type: http
+  seq: 3
+}
+
+get {
+  url: https://{{Test}}/api/user/timezones
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{Bearer}}
+}

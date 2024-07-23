@@ -1,0 +1,22 @@
+meta {
+  name: closedissuehistorysetting
+  type: http
+  seq: 2
+}
+
+put {
+  url: https://{{Test}}/api/user/closedissuehistorysetting
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{Bearer}}
+}
+
+body:json {
+  {
+      "defaultDays": 77,
+      "days": "90"
+  }
+}

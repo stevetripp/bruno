@@ -1,0 +1,24 @@
+meta {
+  name: Broadcast Events
+  type: http
+  seq: 3
+}
+
+get {
+  url: https://gospel-stream-service.churchofjesuschrist.org/stream/live/user?includeYoutubeOnlyEvents=false&lang=eng
+  body: none
+  auth: bearer
+}
+
+params:query {
+  includeYoutubeOnlyEvents: false
+  lang: eng
+}
+
+headers {
+  context: preview
+}
+
+auth:bearer {
+  token: {{Bearer}}
+}

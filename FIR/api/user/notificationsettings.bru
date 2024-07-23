@@ -1,0 +1,28 @@
+meta {
+  name: notificationsettings
+  type: http
+  seq: 6
+}
+
+put {
+  url: https://{{Test}}/api/user/notificationsettings
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{Bearer}}
+}
+
+body:json {
+  {
+      "byEmail": false,
+      "byPushNotifications": false,
+      "whenIssueApproved": false,
+      "whenIssueCreated": true,
+      "whenIssueRejected": true,
+      "whenWorkOrderOpened": false,
+      "whenWorkOrderUpdated": true,
+      "whenWorkOrderClosed": false
+  }
+}

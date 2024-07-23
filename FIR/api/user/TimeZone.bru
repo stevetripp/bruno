@@ -1,0 +1,20 @@
+meta {
+  name: TimeZone
+  type: http
+  seq: 7
+}
+
+put {
+  url: https://{{Test}}/api/User/TimeZone?timeZone=America%2FDenver&overrideExisting=false
+  body: json
+  auth: bearer
+}
+
+params:query {
+  timeZone: America%2FDenver
+  overrideExisting: false
+}
+
+auth:bearer {
+  token: {{Bearer}}
+}

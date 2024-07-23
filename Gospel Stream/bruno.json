@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "Gospel Stream",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

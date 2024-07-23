@@ -1,0 +1,19 @@
+meta {
+  name: User-Language
+  type: http
+  seq: 1
+}
+
+put {
+  url: https://{{Test}}/api/v2/User/Language?language=eng
+  body: none
+  auth: bearer
+}
+
+params:query {
+  language: eng
+}
+
+auth:bearer {
+  token: {{Bearer}}
+}

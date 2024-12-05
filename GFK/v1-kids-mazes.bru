@@ -1,13 +1,17 @@
 meta {
   name: v1-kids-mazes
   type: http
-  seq: 3
+  seq: 6
 }
 
 get {
-  url: {{stage}}v1/kids/mazes
+  url: {{local}}v1/kids/mazes?isPreview=false
   body: none
   auth: bearer
+}
+
+params:query {
+  isPreview: false
 }
 
 headers {

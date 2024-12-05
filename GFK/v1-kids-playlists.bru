@@ -1,18 +1,13 @@
 meta {
-  name: v1-kids-fillintheblanks
+  name: v1-kids-playlists
   type: http
-  seq: 5
+  seq: 12
 }
 
 get {
-  url: {{prod}}v1/kids/fillintheblanks?lang=eng&isPreview=true
+  url: {{stage}}v1/kids/playlists
   body: none
   auth: bearer
-}
-
-params:query {
-  lang: eng
-  isPreview: true
 }
 
 headers {

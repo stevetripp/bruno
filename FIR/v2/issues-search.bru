@@ -5,7 +5,7 @@ meta {
 }
 
 post {
-  url: https://{{Stage}}/api/v2/issues/search
+  url: https://{{Test}}/api/v2/issues/search
   body: json
   auth: bearer
 }
@@ -19,7 +19,7 @@ body:json {
       "sort": "create",
       "ascending": false,
       "pageNumber": 1,
-      "pageSize": 1000,
+      "pageSize": 20,
       "searchString": null,
       "reportedByName": null,
       "structureNumbers": null,

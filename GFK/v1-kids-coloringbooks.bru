@@ -5,14 +5,19 @@ meta {
 }
 
 get {
-  url: {{stage}}v1/kids/coloringbooks
+  url: {{stage}}v1/kids/coloringbooks?lang=eng&isPreview=true
   body: none
   auth: bearer
 }
 
+params:query {
+  lang: eng
+  isPreview: true
+}
+
 headers {
   client-app-name: kids-Android
-  ~If-None-Match: "00cf248f9acbe0c8f2588e8b7ac50cd56"
+  ~If-None-Match: "0b5cb0109e84eef74a2097a3da60621fb"
 }
 
 auth:bearer {

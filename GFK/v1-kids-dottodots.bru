@@ -1,13 +1,18 @@
 meta {
   name: v1-kids-dottodots
   type: http
-  seq: 6
+  seq: 3
 }
 
 get {
-  url: {{stage}}v1/kids/dottodots
+  url: {{stage}}v1/kids/dottodots?lang=eng&isPreview=false
   body: none
   auth: bearer
+}
+
+params:query {
+  lang: eng
+  isPreview: false
 }
 
 headers {

@@ -1,0 +1,15 @@
+meta {
+  name: notificationsettings_get
+  type: http
+  seq: 3
+}
+
+get {
+  url: https://{{Stage}}/api/user/notificationsettings
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{Bearer}}
+}

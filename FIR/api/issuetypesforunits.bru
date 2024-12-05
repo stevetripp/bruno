@@ -1,11 +1,11 @@
 meta {
   name: issuetypesforunits
   type: http
-  seq: 7
+  seq: 4
 }
 
 post {
-  url: https://{{Test}}/api/issuetypesforunits/eng
+  url: https://{{Stage}}/api/issuetypesforunits/eng
   body: json
   auth: bearer
 }
@@ -15,5 +15,5 @@ auth:bearer {
 }
 
 body:json {
-  [{"unitNumber":11736210000,"checksum":"c51a68435a6a2b20f5988bc866e584ce"}]
+  [{"unitNumber":11546260000,"checksum":""}]
 }

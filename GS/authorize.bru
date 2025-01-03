@@ -1,0 +1,21 @@
+meta {
+  name: authorize
+  type: http
+  seq: 8
+}
+
+post {
+  url: {{auth_base_url}}/oauth2/default/v1/device/authorize
+  body: formUrlEncoded
+  auth: none
+}
+
+headers {
+  Accept: application/json
+  Content-Type: application/x-www-form-urlencoded
+}
+
+body:form-urlencoded {
+  client_id: {{kevin_butler_test_clientId}}
+  scope: openid profile offline_access
+}

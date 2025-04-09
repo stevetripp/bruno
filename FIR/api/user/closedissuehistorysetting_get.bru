@@ -1,0 +1,15 @@
+meta {
+  name: closedissuehistorysetting_get
+  type: http
+  seq: 2
+}
+
+get {
+  url: https://{{Test}}/api/user/closedissuehistorysetting
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{Bearer}}
+}

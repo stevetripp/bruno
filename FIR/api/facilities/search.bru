@@ -1,0 +1,22 @@
+meta {
+  name: search
+  type: http
+  seq: 4
+}
+
+post {
+  url: https://{{Test}}/api/Facilities/Search
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{Bearer}}
+}
+
+body:json {
+  {
+    "searchString": "Draper",
+    "timeStamp": 1744149280
+  }
+}

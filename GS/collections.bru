@@ -1,0 +1,19 @@
+meta {
+  name: collections
+  type: http
+  seq: 5
+}
+
+get {
+  url: https://gospel-stream-service.churchofjesuschrist.org/stream/collections?id=1beb114a0f9d4943b42efb5831170d96
+  body: none
+  auth: bearer
+}
+
+params:query {
+  id: 1beb114a0f9d4943b42efb5831170d96
+}
+
+auth:bearer {
+  token: {{bearer_token}}
+}

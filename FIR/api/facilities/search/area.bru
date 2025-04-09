@@ -5,7 +5,24 @@ meta {
 }
 
 post {
-  url: https://{{Stage}}/api/facilities/search/area
-  body: none
-  auth: none
+  url: https://{{Test}}/api/facilities/search/area
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{Bearer}}
+}
+
+body:json {
+  {
+    "area": {
+      "swLatitude": 36.70958406532352,
+      "swLongitude": -122.53503341227771,
+      "neLatitude": 38.05947506286019,
+      "neLongitude": -121.63204226642847,
+      "isSinglePoint": false
+    },
+    "zoom": 9
+  }
 }

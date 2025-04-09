@@ -5,14 +5,14 @@ meta {
 }
 
 get {
-  url: {{stage}}v1/kids/dottodots?lang=eng&isPreview=false
+  url: {{prod}}v1/kids/dottodots?lang=eng
   body: none
   auth: bearer
 }
 
 params:query {
   lang: eng
-  isPreview: false
+  ~isPreview: true
 }
 
 headers {

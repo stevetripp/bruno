@@ -5,14 +5,14 @@ meta {
 }
 
 get {
-  url: {{prod}}v1/kids/fillintheblanks?lang=eng&isPreview=true
+  url: {{prod}}v1/kids/fillintheblanks?lang=eng&isPreview=false
   body: none
   auth: bearer
 }
 
 params:query {
   lang: eng
-  isPreview: true
+  isPreview: false
 }
 
 headers {

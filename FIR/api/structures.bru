@@ -1,11 +1,11 @@
 meta {
   name: structures
   type: http
-  seq: 1
+  seq: 4
 }
 
 post {
-  url: https://{{Stage}}/api/structures
+  url: https://{{Test}}/api/structures
   body: json
   auth: bearer
 }
@@ -16,7 +16,7 @@ auth:bearer {
 
 body:json {
   [
-      "5466288-01",
-      "5158702-04"
+    "5008346-01",
+    "5254450-01"
   ]
 }

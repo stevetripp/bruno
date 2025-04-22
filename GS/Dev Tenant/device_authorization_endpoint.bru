@@ -1,11 +1,11 @@
 meta {
-  name: authorize
+  name: device_authorization_endpoint
   type: http
-  seq: 8
+  seq: 2
 }
 
 post {
-  url: {{auth_base_url}}/oauth2/default/v1/device/authorize
+  url: {{dev_tenant_base_url}}/oauth2/default/v1/device/authorize
   body: formUrlEncoded
   auth: none
 }
@@ -16,6 +16,6 @@ headers {
 }
 
 body:form-urlencoded {
-  client_id: {{kevin_butler_test_clientId}}
+  client_id: 0oan8ygopkOS6iKUP5d7
   scope: openid profile offline_access
 }

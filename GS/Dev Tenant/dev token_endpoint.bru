@@ -1,11 +1,11 @@
 meta {
-  name: token
+  name: dev token_endpoint
   type: http
-  seq: 9
+  seq: 3
 }
 
 post {
-  url: {{auth_base_url}}/oauth2/default/v1/token
+  url: {{dev_tenant_base_url}}/oauth2/default/v1/token
   body: formUrlEncoded
   auth: none
 }
@@ -16,7 +16,7 @@ headers {
 }
 
 body:form-urlencoded {
-  client_id: {{kevin_butler_test_clientId}}
+  client_id: 0oan8ygopkOS6iKUP5d7
   grant_type: urn:ietf:params:oauth:grant-type:device_code
-  device_code: 28e0222a-5743-491c-a094-00b6d6554cd9
+  device_code: 69d4f2a5-9f63-4d0d-b4d2-32605dbb4d9a
 }

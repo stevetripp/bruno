@@ -1,0 +1,11 @@
+meta {
+  name: wellknowns
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{dev_tenant_base_url}}/oauth2/default/.well-known/openid-configuration
+  body: none
+  auth: inherit
+}

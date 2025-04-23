@@ -5,16 +5,7 @@ meta {
 }
 
 get {
-  url: {{stage}}v1/kids/playlists
+  url: {{base_url}}v1/kids/playlists
   body: none
-  auth: bearer
-}
-
-headers {
-  client-app-name: kids-Android
-  If-None-Match: "00cf248f9acbe0c8f2588e8b7ac50cd56"
-}
-
-auth:bearer {
-  token: {{bearer}}
+  auth: inherit
 }

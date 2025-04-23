@@ -5,21 +5,12 @@ meta {
 }
 
 get {
-  url: {{prod}}v1/kids/scripturestories?lang=eng&isPreview=false
+  url: {{base_url}}v1/kids/scripturestories?lang=eng&isPreview=false
   body: none
-  auth: bearer
+  auth: inherit
 }
 
 params:query {
   lang: eng
   isPreview: false
-}
-
-headers {
-  client-app-name: kids-Android
-  ~If-None-Match: "0beb6ecf36b3ce8eec6c2a4a6e398cdb2"
-}
-
-auth:bearer {
-  token: {{bearer}}
 }

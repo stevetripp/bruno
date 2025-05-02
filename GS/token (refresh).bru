@@ -1,7 +1,7 @@
 meta {
-  name: token
+  name: token (refresh)
   type: http
-  seq: 9
+  seq: 11
 }
 
 post {
@@ -17,6 +17,7 @@ headers {
 
 body:form-urlencoded {
   client_id: {{client_id}}
-  grant_type: urn:ietf:params:oauth:grant-type:device_code
-  device_code: 56754247-9699-42f3-9f47-2e84aee3dc8c
+  grant_type: refresh_token
+  scope: offline_access profile openid
+  refresh_token: DXlA-ZewGuaZHvPBXvh8ns3qaixwxHXxocMY_raOGq0
 }

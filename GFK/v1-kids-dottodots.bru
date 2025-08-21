@@ -5,7 +5,12 @@ meta {
 }
 
 get {
-  url: {{base_url}}v1/kids/dottodots
+  url: {{base_url}}v1/kids/dottodots?lang=eng&isPreview=false
   body: none
   auth: inherit
+}
+
+params:query {
+  lang: eng
+  isPreview: false
 }

@@ -5,7 +5,16 @@ meta {
 }
 
 get {
-  url: {{base_url}}v1/kids/playalongsongs
+  url: {{base_url}}v1/kids/playalongsongs?lang=eng&isPreview=false
   body: none
   auth: inherit
+}
+
+params:query {
+  lang: eng
+  isPreview: false
+}
+
+headers {
+  ~If-None-Match: "2456c4fadadfb89c629cf4b6a23d626b"
 }

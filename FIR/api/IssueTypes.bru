@@ -1,15 +1,11 @@
 meta {
   name: IssueTypes
   type: http
-  seq: 3
+  seq: 6
 }
 
 get {
-  url: https://{{Test}}/api/IssueTypes
+  url: {{BaseUrl}}/api/IssueTypes
   body: none
-  auth: bearer
-}
-
-auth:bearer {
-  token: {{Bearer}}
+  auth: inherit
 }

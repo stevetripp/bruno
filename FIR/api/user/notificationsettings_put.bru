@@ -5,13 +5,9 @@ meta {
 }
 
 put {
-  url: https://{{Test}}/api/user/notificationsettings
+  url: {{BaseUrl}}/api/user/notificationsettings
   body: json
-  auth: bearer
-}
-
-auth:bearer {
-  token: {{Bearer}}
+  auth: inherit
 }
 
 body:json {

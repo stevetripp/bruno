@@ -5,16 +5,12 @@ meta {
 }
 
 put {
-  url: https://{{Test}}/api/User/TimeZone?timeZone=America%2FDenver&overrideExisting=false
+  url: {{BaseUrl}}/api/User/TimeZone?timeZone=America%2FDenver&overrideExisting=false
   body: json
-  auth: bearer
+  auth: inherit
 }
 
 params:query {
-  timeZone: America%2FDenver
+  timeZone: America/Denver
   overrideExisting: false
-}
-
-auth:bearer {
-  token: {{Bearer}}
 }

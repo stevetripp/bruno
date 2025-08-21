@@ -1,17 +1,13 @@
 meta {
   name: issue-attachment--issueId-
   type: http
-  seq: 6
+  seq: 9
 }
 
 post {
-  url: https://{{Test}}/api/issue/attachment/3753956
+  url: {{BaseUrl}}/api/issue/attachment/3753956
   body: json
-  auth: bearer
-}
-
-auth:bearer {
-  token: {{Bearer}}
+  auth: inherit
 }
 
 body:json {

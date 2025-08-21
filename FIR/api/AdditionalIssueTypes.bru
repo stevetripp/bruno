@@ -5,11 +5,7 @@ meta {
 }
 
 get {
-  url: https://{{Test}}/api/additionalIssueTypes/eng/5158702-04-01
+  url: {{BaseUrl}}/api/additionalIssueTypes/eng/5158702-04-01
   body: none
-  auth: bearer
-}
-
-auth:bearer {
-  token: {{Bearer}}
+  auth: inherit
 }

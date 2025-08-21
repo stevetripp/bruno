@@ -1,15 +1,16 @@
 meta {
   name: v1-kids-mazes
   type: http
-  seq: 6
+  seq: 7
 }
 
 get {
-  url: {{base_url}}v1/kids/mazes?isPreview=false
+  url: {{base_url}}v1/kids/mazes?lang=eng&isPreview=false
   body: none
   auth: inherit
 }
 
 params:query {
+  lang: eng
   isPreview: false
 }

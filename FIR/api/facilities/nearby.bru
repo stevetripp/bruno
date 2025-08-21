@@ -5,13 +5,9 @@ meta {
 }
 
 post {
-  url: https://{{Stage}}/api/facilities/nearby
+  url: {{BaseUrl}}/api/facilities/nearby
   body: json
-  auth: bearer
-}
-
-auth:bearer {
-  token: {{Bearer}}
+  auth: inherit
 }
 
 body:json {

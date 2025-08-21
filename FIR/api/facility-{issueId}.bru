@@ -1,15 +1,11 @@
 meta {
   name: facility/{issueId}
   type: http
-  seq: 7
+  seq: 10
 }
 
 get {
-  url: https://{{Test}}/api/facility/4333178
+  url: {{BaseUrl}}/api/facility/4333178
   body: none
-  auth: bearer
-}
-
-auth:bearer {
-  token: {{Bearer}}
+  auth: inherit
 }

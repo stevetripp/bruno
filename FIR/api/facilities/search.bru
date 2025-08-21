@@ -5,13 +5,9 @@ meta {
 }
 
 post {
-  url: https://{{Test}}/api/Facilities/Search
+  url: {{BaseUrl}}/api/Facilities/Search
   body: json
-  auth: bearer
-}
-
-auth:bearer {
-  token: {{Bearer}}
+  auth: inherit
 }
 
 body:json {

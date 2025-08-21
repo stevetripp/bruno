@@ -5,11 +5,7 @@ meta {
 }
 
 get {
-  url: https://{{Test}}/api/User/AuthorizedPositions
+  url: {{BaseUrl}}/api/User/AuthorizedPositions
   body: none
-  auth: bearer
-}
-
-auth:bearer {
-  token: {{Bearer}}
+  auth: inherit
 }

@@ -5,7 +5,12 @@ meta {
 }
 
 get {
-  url: {{base_url}}v1/kids/musicplaylists
+  url: {{base_url}}v1/kids/musicplaylists?lang=eng&isPreview=false
   body: none
   auth: inherit
+}
+
+params:query {
+  lang: eng
+  isPreview: false
 }

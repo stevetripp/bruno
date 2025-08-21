@@ -1,17 +1,13 @@
 meta {
   name: structures
   type: http
-  seq: 4
+  seq: 7
 }
 
 post {
-  url: https://{{Test}}/api/structures
+  url: {{BaseUrl}}/api/structures
   body: json
-  auth: bearer
-}
-
-auth:bearer {
-  token: {{Bearer}}
+  auth: inherit
 }
 
 body:json {

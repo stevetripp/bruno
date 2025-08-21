@@ -5,16 +5,12 @@ meta {
 }
 
 post {
-  url: https://{{Test}}/api/facilities?structureNumbers=5008346-01&structureNumbers=5254450-01
+  url: {{BaseUrl}}/api/facilities?structureNumbers=5008346-01&structureNumbers=5254450-01
   body: json
-  auth: bearer
+  auth: inherit
 }
 
 params:query {
   structureNumbers: 5008346-01
   structureNumbers: 5254450-01
-}
-
-auth:bearer {
-  token: {{Bearer}}
 }

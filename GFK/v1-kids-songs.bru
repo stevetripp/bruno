@@ -1,11 +1,16 @@
 meta {
   name: v1-kids-songs
   type: http
-  seq: 11
+  seq: 12
 }
 
 get {
-  url: {{base_url}}v1/kids/songs
+  url: {{base_url}}v1/kids/songs?lang=eng&isPreview=true
   body: none
   auth: inherit
+}
+
+params:query {
+  lang: eng
+  isPreview: true
 }

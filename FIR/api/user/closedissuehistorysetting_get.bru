@@ -5,11 +5,7 @@ meta {
 }
 
 get {
-  url: https://{{Test}}/api/user/closedissuehistorysetting
+  url: {{BaseUrl}}/api/user/closedissuehistorysetting
   body: json
-  auth: bearer
-}
-
-auth:bearer {
-  token: {{Bearer}}
+  auth: inherit
 }

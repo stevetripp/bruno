@@ -5,11 +5,7 @@ meta {
 }
 
 get {
-  url: https://{{Test}}/api/user/notificationsettings
+  url: {{BaseUrl}}/api/user/notificationsettings
   body: none
-  auth: bearer
-}
-
-auth:bearer {
-  token: {{Bearer}}
+  auth: inherit
 }

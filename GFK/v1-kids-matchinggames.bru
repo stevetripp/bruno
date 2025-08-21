@@ -1,11 +1,16 @@
 meta {
   name: v1-kids-matchinggames
   type: http
-  seq: 7
+  seq: 6
 }
 
 get {
-  url: {{base_url}}v1/kids/matchinggames
+  url: {{base_url}}v1/kids/matchinggames?lang=eng&isPreview=false
   body: none
   auth: inherit
+}
+
+params:query {
+  lang: eng
+  isPreview: false
 }

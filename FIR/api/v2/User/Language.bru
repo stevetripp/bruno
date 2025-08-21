@@ -5,15 +5,11 @@ meta {
 }
 
 put {
-  url: https://{{Stage}}/api/v2/User/Language?language=eng
+  url: {{BaseUrl}}/api/v2/User/Language?language=eng
   body: none
-  auth: bearer
+  auth: inherit
 }
 
 params:query {
   language: eng
-}
-
-auth:bearer {
-  token: {{Bearer}}
 }

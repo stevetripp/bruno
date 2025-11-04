@@ -5,12 +5,16 @@ meta {
 }
 
 get {
-  url: {{base_url}}v1/kids/coloringbooks?lang=eng&isPreview=false
+  url: {{base_url}}/v1/kids/coloringbooks?lang=eng&isPreview=true
   body: none
   auth: inherit
 }
 
 params:query {
   lang: eng
-  isPreview: false
+  isPreview: true
+}
+
+headers {
+  If-None-Match: ""
 }

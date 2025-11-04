@@ -5,15 +5,11 @@ meta {
 }
 
 get {
-  url: https://gospel-stream-service.churchofjesuschrist.org/stream/collections?id=1beb114a0f9d4943b42efb5831170d96
+  url: {{base_url}}/v1/collections?id=1beb114a0f9d4943b42efb5831170d96
   body: none
-  auth: bearer
+  auth: inherit
 }
 
 params:query {
   id: 1beb114a0f9d4943b42efb5831170d96
-}
-
-auth:bearer {
-  token: {{bearer_token}}
 }

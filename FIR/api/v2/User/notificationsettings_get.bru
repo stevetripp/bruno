@@ -1,0 +1,15 @@
+meta {
+  name: notificationsettings_get
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{BaseUrl}}/api/v2/user/notificationsettings
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

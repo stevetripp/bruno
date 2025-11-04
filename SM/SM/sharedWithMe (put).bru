@@ -1,0 +1,15 @@
+meta {
+  name: sharedWithMe (put)
+  type: http
+  seq: 3
+}
+
+put {
+  url: {{base_url}}/ws/annotation/v1.5/rest/sharedWithMe
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

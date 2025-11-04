@@ -5,9 +5,9 @@ meta {
 }
 
 get {
-  url: https://gospel-stream-service-int.churchofjesuschrist.org/stream/lastUpdateForLiveEvents
+  url: {{base_url}}/v1/lastUpdateForLiveEvents
   body: none
-  auth: bearer
+  auth: inherit
 }
 
 params:query {
@@ -18,8 +18,4 @@ headers {
   User-Agent: GospelStream 0.9.0-(901.) DEV / Android 12 8015633 / Google sdk_gphone64_x86_64
   client-app-name: gStream-Android
   client-app-version: 0.9.0-(901.) DEV
-}
-
-auth:bearer {
-  token: {{bearer_token}}
 }

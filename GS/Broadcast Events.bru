@@ -5,9 +5,9 @@ meta {
 }
 
 get {
-  url: https://gospel-stream-service.churchofjesuschrist.org/stream/live/user?includeYoutubeOnlyEvents=false&lang=eng
+  url: {{base_url}}/v1/live/user?includeYoutubeOnlyEvents=false&lang=eng
   body: none
-  auth: bearer
+  auth: inherit
 }
 
 params:query {
@@ -17,8 +17,4 @@ params:query {
 
 headers {
   context: preview
-}
-
-auth:bearer {
-  token: {{Bearer}}
 }

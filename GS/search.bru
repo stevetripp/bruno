@@ -5,9 +5,9 @@ meta {
 }
 
 get {
-  url: https://gospel-stream-service.churchofjesuschrist.org/stream/videos/search?searchTerm=Faith&lang=eng&offset=0
+  url: {{base_url}}/v1/videos/search?searchTerm=Faith&lang=eng&offset=0
   body: none
-  auth: none
+  auth: inherit
 }
 
 params:query {

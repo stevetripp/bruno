@@ -5,7 +5,7 @@ meta {
 }
 
 post {
-  url: {{BaseUrl}}/api/v2/issues/search
+  url: {{BaseUrl}}/api/mobile/v1/issues/search
   body: json
   auth: inherit
 }
@@ -25,4 +25,9 @@ body:json {
     "sort": "create",
     "ascending": false
   }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
 }

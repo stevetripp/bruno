@@ -1,0 +1,15 @@
+info:
+  name: user (get)
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: "{{BASE_URL}}user/a5dbf046-e5c8-4e03-bca4-7388933f67cf"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

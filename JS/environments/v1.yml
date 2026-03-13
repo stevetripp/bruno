@@ -1,0 +1,4 @@
+name: v1
+variables:
+  - name: BASE_URL
+    value: https://www.justserve.org/api/mobile/v1/

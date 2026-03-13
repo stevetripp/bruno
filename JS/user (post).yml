@@ -1,0 +1,95 @@
+info:
+  name: user (post)
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{BASE_URL}}user/a5dbf046-e5c8-4e03-bca4-7388933f67cf"
+  body:
+    type: json
+    data: |-
+      {
+        "userId": "a5dbf046-e5c8-4e03-bca4-7388933f67cf",
+        "shouldPromptUserForZip": false,
+        "userVerified": true,
+        "showProfileIncompleteNotification": false,
+        "personal": {
+          "modified": "2021-05-27T15:44:25Z",
+          "username": "ppirtnevets@gmail.com",
+          "firstName": "Steve",
+          "lastName": "Tripp",
+          "email": "ppirtnevets@gmail.com",
+          "phone": null,
+          "language": "en-US"
+        },
+        "location": {
+          "modified": "2021-05-27T15:44:25Z",
+          "city": null,
+          "state": null,
+          "postalCode": null,
+          "countryCodeAlpha3": null,
+          "address": null,
+          "distanceUnits": "MILES",
+          "clock": "HOURS24"
+        },
+        "projectOptions": {
+          "modified": "2021-05-27T15:44:25Z",
+          "suitableForAllAges": false,
+          "groupProject": false,
+          "projectFiltersOpen": false,
+          "volunteerFromHome": false,
+          "volunteerFromAnywhere": false,
+          "itemDonations": false,
+          "wheelchairAccessible": false,
+          "indoors": false,
+          "forYouthGroups": false
+        },
+        "contactOptions": {
+          "modified": "2021-05-27T15:44:25Z",
+          "weeklyUpdates": false,
+          "weeklyUpdatesRadius": 25,
+          "statusEmails": false,
+          "contactHelpDisasterRecovery": false,
+          "contactDonateDisasterRelief": false,
+          "notifyUpcomingVolunteeredProjects": false,
+          "notifyUpcomingVolunteeredProjectsDaysPrior": 3,
+          "notifyByMobilePhone": false
+        },
+        "interests": {
+          "modified": "2021-05-27T15:44:25Z",
+          "ids": []
+        },
+        "skills": {
+          "modified": "2021-05-27T15:44:25Z",
+          "ids": []
+        },
+        "tools": {
+          "modified": "2021-05-27T15:44:25Z",
+          "ids": []
+        },
+        "daysOfTheWeek": {
+          "modified": "2021-05-27T15:44:25Z",
+          "ids": []
+        },
+        "timesOfDay": {
+          "modified": "2021-05-27T15:44:25Z",
+          "ids": []
+        },
+        "favoriteOrganizations": {
+          "ids": [],
+          "modified": "2021-05-27T15:44:25Z"
+        },
+        "favoriteProjects": {
+          "ids": [],
+          "modified": "2021-05-27T15:44:25Z"
+        },
+        "volunteeredEvents": []
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

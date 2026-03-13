@@ -1,0 +1,20 @@
+opencollection: 1.0.0
+info:
+  name: "My_Workspace"
+  type: workspace
+
+collections:
+  - name: "EoL"
+    path: "../EoL"
+  - name: "FIR"
+    path: "../FIR"
+  - name: "GFK"
+    path: "../GFK"
+  - name: "GS"
+    path: "../GS"
+  - name: "JS"
+    path: "../JS"
+
+specs:
+
+docs: ''

@@ -5,48 +5,48 @@ info:
 
 http:
   method: POST
-  url: "{{BASE_URL}}user/a5dbf046-e5c8-4e03-bca4-7388933f67cf"
+  url: "{{BASE_URL}}user/53a08d16-a2f8-436f-a6d6-7dea0e890547"
   body:
     type: json
     data: |-
       {
-        "userId": "a5dbf046-e5c8-4e03-bca4-7388933f67cf",
+        "userId": "53a08d16-a2f8-436f-a6d6-7dea0e890547",
         "shouldPromptUserForZip": false,
         "userVerified": true,
-        "showProfileIncompleteNotification": false,
+        "showProfileIncompleteNotification": true,
         "personal": {
-          "modified": "2021-05-27T15:44:25Z",
-          "username": "ppirtnevets@gmail.com",
-          "firstName": "Steve",
-          "lastName": "Tripp",
-          "email": "ppirtnevets@gmail.com",
+          "modified": "2022-04-20T16:44:32Z",
+          "username": "trippntechnology@gmail.com",
+          "firstName": "Tripp'n",
+          "lastName": "Technology",
+          "email": "trippntechnology@gmail.com",
           "phone": null,
           "language": "en-US"
         },
         "location": {
-          "modified": "2021-05-27T15:44:25Z",
+          "modified": "2022-04-20T16:44:32Z",
           "city": null,
           "state": null,
           "postalCode": null,
-          "countryCodeAlpha3": null,
+          "countryCodeAlpha3": "usa",
           "address": null,
           "distanceUnits": "MILES",
           "clock": "HOURS24"
         },
         "projectOptions": {
-          "modified": "2021-05-27T15:44:25Z",
+          "modified": "2022-04-21T17:13:52Z",
           "suitableForAllAges": false,
           "groupProject": false,
           "projectFiltersOpen": false,
           "volunteerFromHome": false,
           "volunteerFromAnywhere": false,
-          "itemDonations": false,
+          "itemDonations": true,
           "wheelchairAccessible": false,
           "indoors": false,
           "forYouthGroups": false
         },
         "contactOptions": {
-          "modified": "2021-05-27T15:44:25Z",
+          "modified": "2022-04-20T16:44:32Z",
           "weeklyUpdates": false,
           "weeklyUpdatesRadius": 25,
           "statusEmails": false,
@@ -57,32 +57,32 @@ http:
           "notifyByMobilePhone": false
         },
         "interests": {
-          "modified": "2021-05-27T15:44:25Z",
+          "modified": "2022-04-21T17:13:52Z",
           "ids": []
         },
         "skills": {
-          "modified": "2021-05-27T15:44:25Z",
+          "modified": "2022-04-20T16:44:32Z",
           "ids": []
         },
         "tools": {
-          "modified": "2021-05-27T15:44:25Z",
+          "modified": "2022-04-20T16:44:32Z",
           "ids": []
         },
         "daysOfTheWeek": {
-          "modified": "2021-05-27T15:44:25Z",
+          "modified": "2022-04-21T17:13:52Z",
           "ids": []
         },
         "timesOfDay": {
-          "modified": "2021-05-27T15:44:25Z",
+          "modified": "2022-04-21T17:13:52Z",
           "ids": []
         },
         "favoriteOrganizations": {
           "ids": [],
-          "modified": "2021-05-27T15:44:25Z"
+          "modified": "2022-04-20T16:44:32Z"
         },
         "favoriteProjects": {
           "ids": [],
-          "modified": "2021-05-27T15:44:25Z"
+          "modified": "2022-04-20T16:44:32Z"
         },
         "volunteeredEvents": []
       }

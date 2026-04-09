@@ -1,0 +1,22 @@
+info:
+  name: LicenseeInfo
+  type: http
+  seq: 4
+
+http:
+  method: GET
+  url: "{{BASE_API_URL}}/v2/licenseeinfo?licenseeId=b6ce5ba1-4632-40a9-8e1e-3bb1c5f426ed&appId=1b4f29eb-3543-413e-8b7c-30a2bd182fed"
+  params:
+    - name: licenseeId
+      value: b6ce5ba1-4632-40a9-8e1e-3bb1c5f426ed
+      type: query
+    - name: appId
+      value: 1b4f29eb-3543-413e-8b7c-30a2bd182fed
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,22 @@
+info:
+  name: PostVerifyLicense
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: "{{BASE_API_URL}}/v1/postverifylicense"
+  body:
+    type: json
+    data: |-
+      {
+        "licenseeId": "b6ce5ba1-4632-40a9-8e1e-3bb1c5f426ed",
+        "applicationId": "1b4f29eb-3543-413e-8b7c-30a2bd182fed"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

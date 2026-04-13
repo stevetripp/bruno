@@ -1,0 +1,26 @@
+info:
+  name: AddAnalytic
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: "{{BASE_API_URL}}/v2/addanalytic"
+  body:
+    type: json
+    data: |-
+      {
+        "eventType": "ApplicationStart",
+        "metadata": {
+          "version": "1.0.0",
+          "userId": "user123",
+          "deviceId": "device456"
+        }
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

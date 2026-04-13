@@ -1,0 +1,22 @@
+info:
+  name: Authorize
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: https://localhost:5001/api/authorization/authorize
+  body:
+    type: json
+    data: |-
+      {
+        "id": "1b4f29eb-3543-413e-8b7c-30a2bd182fed",
+        "secret": "secret"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

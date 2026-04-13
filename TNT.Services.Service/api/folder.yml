@@ -1,0 +1,9 @@
+info:
+  name: api
+  type: folder
+  seq: 1
+
+request:
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJBY2Nlc3NUb2tlbiIsImp0aSI6Ijk2OTMwYWRkLWI2ZTQtNDgwMS1iNzNhLTAwYjRiNTMyODI0NCIsImlhdCI6MTc3NTIyNTQ0NiwiSWQiOiIxYjRmMjllYi0zNTQzLTQxM2UtOGI3Yy0zMGEyYmQxODJmZWQiLCJOYW1lIjoiTFNEIiwibmJmIjoxNzc1MjI1NDQ2LCJleHAiOjE3NzUyNDcxMDYsImlzcyI6IlROVC5TZXJ2aWNlcy5TZXJ2aWNlIiwiYXVkIjoiVGhlQXVkaWVuY2UifQ.oos2PDBv4W8NNIwYdsVqm7gd-jNXifPE2To86U31keg

@@ -1,0 +1,19 @@
+info:
+  name: GetApplicationInfo
+  type: http
+  seq: 2
+
+http:
+  method: GET
+  url: "{{BASE_API_URL}}/v1/getapplicationinfo?applicationId=1b4f29eb-3543-413e-8b7c-30a2bd182fed"
+  params:
+    - name: applicationId
+      value: 1b4f29eb-3543-413e-8b7c-30a2bd182fed
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

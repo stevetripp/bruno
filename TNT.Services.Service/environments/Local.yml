@@ -1,0 +1,4 @@
+name: Local
+variables:
+  - name: BASE_API_URL
+    value: https://localhost:5001/api

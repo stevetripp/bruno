@@ -1,0 +1,23 @@
+info:
+  name: shifts PATCH
+  type: http
+  seq: 4
+
+http:
+  method: PATCH
+  url: "{{BASE_URL}}/api/mobile/v1/me/shifts/my:19612/substitution-status"
+  body:
+    type: json
+    data: |-
+      {
+        "shiftId": "my:19612",
+        "userId": "3073fc36-c8c4-418f-9d21-9dbfa4fc35f9",
+        "substitutionStatus": "OPEN"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

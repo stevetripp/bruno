@@ -1,0 +1,26 @@
+opencollection: 1.0.0
+
+info:
+  name: TSV
+config:
+  proxy:
+    inherit: true
+    config:
+      protocol: http
+      hostname: ""
+      port: ""
+      auth:
+        username: ""
+        password: ""
+      bypassProxy: ""
+
+request:
+  auth:
+    type: bearer
+    token: eyJraWQiOiJpdkIwU0otYkxoUnNmYkxacEd3a2ZNV1Q1NU1TSFc0cWFNbjQteEdiREF3IiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULjdUXzNzc1NaazVVR2w5SXlyNWk1STV5SG8wRXBiMTltQ2NyQl9PRUpPN2cub2FyM3hqcDBhaURCdVp1NzQ2OTciLCJpc3MiOiJodHRwczovL2ludGVncmF0b3ItMzgxMTAyMy5va3RhLmNvbS9vYXV0aDIvZGVmYXVsdCIsImF1ZCI6ImFwaTovL2RlZmF1bHQiLCJpYXQiOjE3NzY4NzM1MTYsImV4cCI6MTc3Njg3NzExNiwiY2lkIjoiMG9hMTF1eGc1bTR6OUZHcXc2OTgiLCJ1aWQiOiIwMHV6ejFveHA3RXNQbUM0YjY5NyIsInNjcCI6WyJvZmZsaW5lX2FjY2VzcyIsImVtYWlsIiwib3BlbmlkIiwiY21pc2lkIiwicHJvZmlsZSJdLCJhdXRoX3RpbWUiOjE3NzY4NzM1MTUsInN1YiI6InR2LXZvbC0zIiwiY2h1cmNoQ01JU1VVSUQiOiIzMDczZmMzNi1jOGM0LTQxOGYtOWQyMS05ZGJmYTRmYzM1ZjkifQ.SInhhfuglzC_yxsiri_rpFwXL4irTP_JmnVYZ7nZAkVYW_fp64XwJCBQHd2SMRLDv72TnXmoBGVdiFB4fFbM7D7rrgJ25KvbosRnQppxNPGhW1A7jFEpDob88WWetcpJX0mBod1HXgafAZ-oecjp3xkTnuM3xDbmRtQ61HOvb9WCjFsMdm8G4WAWqshZCaMcqAuYNG7A87bjO6t2v7NmV-qodhTdZyv4NRgIbTpYaKRtROkIQTBG4Zu7qX9kAWmWujJD80SuGpfphsHmW9GcHXkCZpg8h5I6f5BTAELSFecfGkB4XPuy8bsI7d8AcM8PasqzRBQyOcyuXV5HJ4wb1A
+bundled: false
+extensions:
+  bruno:
+    ignore:
+      - node_modules
+      - .git

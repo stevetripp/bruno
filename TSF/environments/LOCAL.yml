@@ -1,0 +1,4 @@
+name: LOCAL
+variables:
+  - name: BASE_URL
+    value: http://192.168.1.68:8000

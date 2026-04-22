@@ -1,0 +1,4 @@
+name: STAGE
+variables:
+  - name: BASE_URL
+    value: https://fm-tsv-mobile-service-dev.pvu.cf.churchofjesuschrist.org

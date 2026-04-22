@@ -1,0 +1,16 @@
+meta {
+  name: issueTypesForFacility
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{BaseUrl}}/api/mobile/v1/IssueTypesForFacility/{facilityId}
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

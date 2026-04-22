@@ -1,0 +1,16 @@
+meta {
+  name: update-requests
+  type: http
+  seq: 7
+}
+
+get {
+  url: {{BaseUrl}}/api/mobile/v1/update-requests/{issueId}
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

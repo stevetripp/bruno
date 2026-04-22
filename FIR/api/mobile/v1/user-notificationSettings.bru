@@ -1,0 +1,16 @@
+meta {
+  name: user/notificationSettings
+  type: http
+  seq: 10
+}
+
+get {
+  url: {{BaseUrl}}/api/mobile/v1/user/NotificationSettings
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

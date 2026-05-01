@@ -1,0 +1,29 @@
+opencollection: 1.0.0
+
+info:
+  name: TSV
+config:
+  proxy:
+    inherit: true
+    config:
+      protocol: http
+      hostname: ""
+      port: ""
+      auth:
+        username: ""
+        password: ""
+      bypassProxy: ""
+
+request:
+  headers:
+    - name: X-User-Id
+      value: user2
+  auth:
+    type: bearer
+    token: eyJraWQiOiJsenFOV0NWZnZfdVpQZERFdUxuWFRueGhLOEctQVN1QjJOdUJmYkRPSVhRIiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULkI3cXFWdHJiTmp3ZzJiNENNcEtBMGdyVnAxRFBxODRvSnFVVC1VdGNuVzAub2FyM3lyeGo0ZVRJU1JwUmo2OTciLCJpc3MiOiJodHRwczovL2ludGVncmF0b3ItMzgxMTAyMy5va3RhLmNvbS9vYXV0aDIvZGVmYXVsdCIsImF1ZCI6ImFwaTovL2RlZmF1bHQiLCJpYXQiOjE3Nzc2NTA0NDgsImV4cCI6MTc3NzY1NDA0OCwiY2lkIjoiMG9hMTF1eGc1bTR6OUZHcXc2OTgiLCJ1aWQiOiIwMHV6ejFsMjduUzZSMzM0QjY5NyIsInNjcCI6WyJvcGVuaWQiLCJwcm9maWxlIiwib2ZmbGluZV9hY2Nlc3MiLCJlbWFpbCIsImNtaXNpZCJdLCJhdXRoX3RpbWUiOjE3Nzc2NTA0NDcsInN1YiI6InR2LXZvbC0xIiwiY2h1cmNoQ01JU1VVSUQiOiJmY2E5OGUzYi1lZDdhLTQzOGQtYjg5Zi0yZGYyZWU0YTNiZDkifQ.B3j_XJOUeBT9eUNG48ecgDlgvH651UYOm4o0bL0-efXB4hWpr81W7ICijfypngeii25LX2hd0EhkvHMaBOi6FtdJe841dsMhmp33C63rymWVoivX1XStcpBPwQeFmin2Gi_vlPqB2h_xPihO2_U9aw1UYk2DUmgwB5twZPLSBi8clRKkkdsW5JKHIR9xKkaCWsWVB5FBpD9ui6cx6OGcm_IIWuDNKEdX16Yp1OzcAN1OKvK6nk2nW9vLJc9Pgfeid8TWsmFEUko5ZGfzSI_A0SRX4aN967ZU84j7bOB3uPYUArRkJZtV3ynFb6bj1HqSvUDlcPAQGPmzL3x2BKyWzA
+bundled: false
+extensions:
+  bruno:
+    ignore:
+      - node_modules
+      - .git

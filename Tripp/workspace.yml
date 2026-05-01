@@ -1,0 +1,24 @@
+opencollection: 1.0.0
+info:
+  name: "Tripp"
+  type: workspace
+
+collections:
+  - name: "EoL"
+    path: "collections/EoL"
+  - name: "FIR"
+    path: "collections/FIR"
+  - name: "GFK"
+    path: "collections/GFK"
+  - name: "GS"
+    path: "collections/GS"
+  - name: "JS"
+    path: "collections/JS"
+  - name: "TNT.Services.Service"
+    path: "collections/TNT.Services.Service"
+  - name: "TSV"
+    path: "collections/TSV"
+
+specs:
+
+docs: ''

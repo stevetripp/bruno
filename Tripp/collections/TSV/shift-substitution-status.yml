@@ -1,17 +1,17 @@
 info:
-  name: shifts PATCH
+  name: shift/substitution-status
   type: http
   seq: 4
 
 http:
   method: PATCH
-  url: "{{BASE_URL}}/api/mobile/v1/me/shifts/my:19612/substitution-status"
+  url: "{{BASE_URL}}/api/mobile/v1/me/shift/substitution-status"
   body:
     type: json
     data: |-
       {
-        "shiftId": "my:19612",
-        "userId": "3073fc36-c8c4-418f-9d21-9dbfa4fc35f9",
+        "shiftId": "my:39911-1",
+        "userId": "fca98e3b-ed7a-438d-b89f-2df2ee4a3bd9",
         "substitutionStatus": "OPEN"
       }
   auth: inherit

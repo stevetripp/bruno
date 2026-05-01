@@ -1,7 +1,7 @@
 info:
   name: /temples/{templeOrgId}/substitution/{workerSubstitutionId}/workers/{workerId}
   type: http
-  seq: 3
+  seq: 2
 
 http:
   method: PUT

@@ -5,10 +5,10 @@ info:
 
 http:
   method: GET
-  url: "{{SCHEDULING_WS_URL}}/assignment/{{TEMPLE_ORG_ID}}/byIds?assignmentIds="
+  url: "{{SCHEDULING_WS_URL}}/assignment/{{TEMPLE_ORG_ID}}/byIds?assignmentIds=29502,29501"
   params:
     - name: assignmentIds
-      value: ""
+      value: 29502,29501
       type: query
   auth: inherit
 

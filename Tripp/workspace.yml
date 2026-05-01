@@ -18,8 +18,8 @@ collections:
     path: "collections/TNT.Services.Service"
   - name: "TSV"
     path: "collections/TSV"
-  - name: "fm-tsv-core-ws"
-    path: "collections/fm-tsv-core-ws"
+  - name: "fm-tsv"
+    path: "collections/fm-tsv"
 
 specs:
 

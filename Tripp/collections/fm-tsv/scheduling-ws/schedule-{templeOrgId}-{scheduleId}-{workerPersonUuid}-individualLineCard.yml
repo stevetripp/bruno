@@ -5,7 +5,7 @@ info:
 
 http:
   method: GET
-  url: "{{SCHEDULING_WS_URL}}/schedule/{{TEMPLE_ORG_ID}}/2/{{PERSON_UUID}}/individualLineCard"
+  url: "{{SCHEDULING_WS_URL}}/schedule/{{TEMPLE_ORG_ID}}/39613/{{PERSON_UUID}}/individualLineCard"
   auth: inherit
 
 settings:

@@ -1,0 +1,4 @@
+name: STAGE
+variables:
+  - name: BASE_URL
+    value: https://templeworkercore-service-stage.churchofjesuschrist.org/api/v2

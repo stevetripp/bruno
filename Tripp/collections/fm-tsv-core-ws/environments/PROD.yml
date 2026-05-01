@@ -1,0 +1,4 @@
+name: PROD
+variables:
+  - name: BASE_URL
+    value: https://templeworkercore-service.churchofjesuschrist.org/api/v2

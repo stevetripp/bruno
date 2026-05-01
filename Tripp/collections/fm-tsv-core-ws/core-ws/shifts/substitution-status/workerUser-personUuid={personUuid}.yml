@@ -1,0 +1,19 @@
+info:
+  name: /workerUser?personUuid={personUuid}
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: "{{CORE_WS_URL}}/workerUser?personUuid={{PERSON_UUID}}"
+  params:
+    - name: personUuid
+      value: "{{PERSON_UUID}}"
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

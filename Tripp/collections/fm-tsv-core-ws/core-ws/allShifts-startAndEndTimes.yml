@@ -1,0 +1,22 @@
+info:
+  name: /allShifts/startAndEndTimes
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: "{{CORE_WS_URL}}/allShifts/startAndEndTimes?extended=false&shiftId=9502"
+  params:
+    - name: extended
+      value: "false"
+      type: query
+    - name: shiftId
+      value: "9502"
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

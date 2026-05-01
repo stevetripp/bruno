@@ -1,0 +1,15 @@
+info:
+  name: /temples/{templeOrgId}/substitution/workers/{workerId}
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{CORE_WS_URL}}/temples/{{TEMPLE_ORG_ID}}/substitution/workers/{{WORKER_ID}}"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

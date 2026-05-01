@@ -1,0 +1,15 @@
+name: DEV
+variables:
+  - name: CORE_WS_URL
+    value: https://fm-tsv-core-ws-dev.pvu.cf.churchofjesuschrist.org/api/v2
+  - name: BASE_URL
+    value: https://templeworkercore-service-dev.churchofjesuschrist.org/api/v2
+    disabled: true
+  - name: TEMPLE_ORG_ID
+    value: "5001001"
+  - name: WORKER_ID
+    value: "9104"
+  - name: PERSON_UUID
+    value: fca98e3b-ed7a-438d-b89f-2df2ee4a3bd9
+  - name: SCHEDULING_WS_URL
+    value: https://fm-tsv-scheduling-ws-dev.pvu.cf.churchofjesuschrist.org/api/v1

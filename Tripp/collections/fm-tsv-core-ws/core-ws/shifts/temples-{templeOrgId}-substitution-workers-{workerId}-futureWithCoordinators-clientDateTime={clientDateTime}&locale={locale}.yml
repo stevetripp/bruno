@@ -1,0 +1,22 @@
+info:
+  name: /temples/{templeOrgId}/substitution/workers/{workerId}/futureWithCoordinators?clientDateTime={clientDateTime}&locale={locale}
+  type: http
+  seq: 2
+
+http:
+  method: GET
+  url: "{{CORE_WS_URL}}/temples/{{TEMPLE_ORG_ID}}/substitution/workers/{{WORKER_ID}}/futureWithCoordinators?clientDateTime=2026-05-05&locale=en"
+  params:
+    - name: clientDateTime
+      value: 2026-05-05
+      type: query
+    - name: locale
+      value: en
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,27 @@
+info:
+  name: /temples/{templeOrgId}/workers/{workerId}?restrictedEdit={true|false}
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: |-
+    temples/{templeOrgId}/workers/{workerId}?restrictedEdit={true|false}
+    temples/{templeOrgId}/workers/{workerId}?restrictedEdit={true|false}
+    temples/{templeOrgId}/workers/{workerId}?restrictedEdit={true|false}
+    {{CORE_WS_URL}}temples/{{TEMPLE_ORG_ID}}/workers/{{WORKER_ID}?restrictedEdit=true
+  params:
+    - name: restrictedEdit
+      value: |-
+        {true|false}
+        temples/{templeOrgId}/workers/{workerId}?restrictedEdit={true|false}
+        temples/{templeOrgId}/workers/{workerId}?restrictedEdit={true|false}
+        {{CORE_WS_URL}}temples/{{TEMPLE_ORG_ID}}/workers/{{WORKER_ID}?restrictedEdit=true
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

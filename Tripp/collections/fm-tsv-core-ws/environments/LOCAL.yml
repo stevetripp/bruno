@@ -1,0 +1,4 @@
+name: LOCAL
+variables:
+  - name: BASE_URL
+    value: http://templeworkercore-service-local.churchofjesuschrist.org:6600/api/v2

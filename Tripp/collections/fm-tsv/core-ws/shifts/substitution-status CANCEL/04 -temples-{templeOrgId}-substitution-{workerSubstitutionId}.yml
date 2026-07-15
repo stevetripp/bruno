@@ -1,0 +1,15 @@
+info:
+  name: 04 /temples/{templeOrgId}/substitution/{workerSubstitutionId}
+  type: http
+  seq: 4
+
+http:
+  method: DELETE
+  url: /temples/${Constants.TEMPLE_ORG_ID}/substitution/$workerSubstitutionId
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

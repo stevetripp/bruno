@@ -1,0 +1,4 @@
+name: STAGE_LIAHONA
+variables:
+  - name: BASE_URL
+    value: http://172.27.208.245:8080

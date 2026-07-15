@@ -1,0 +1,107 @@
+info:
+  name: mobile/v1/user/{userId} (POST)
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{BASE_URL}}mobile/v1/user/{{USER_ID}}"
+  body:
+    type: json
+    data: |-
+      {
+        "userId": "bee43daa-450b-4ef9-af6d-7cf0f4de3810",
+        "shouldPromptUserForZip": false,
+        "userVerified": true,
+        "showProfileIncompleteNotification": true,
+        "personal": {
+          "modified": "2026-07-15T16:39:44Z",
+          "username": "test.user4@domain.com",
+          "firstName": "test",
+          "lastName": "user4",
+          "email": "test.user4@domain.com",
+          "phone": "555-555-5555",
+          "language": "en-US"
+        },
+        "location": {
+          "modified": "2026-07-15T16:39:44Z",
+          "city": "Draper",
+          "state": "Utah",
+          "postalCode": "84020",
+          "countryCodeAlpha3": "usa",
+          "address": null,
+          "distanceUnits": "MILES",
+          "clock": "HOURS12"
+        },
+        "projectOptions": {
+          "modified": "2026-07-15T16:39:44Z",
+          "suitableForAllAges": false,
+          "groupProject": false,
+          "projectFiltersOpen": false,
+          "volunteerFromHome": false,
+          "volunteerFromAnywhere": false,
+          "itemDonations": false,
+          "wheelchairAccessible": false,
+          "indoors": false,
+          "forYouthGroups": false
+        },
+        "contactOptions": {
+          "modified": "2026-07-15T16:39:44Z",
+          "weeklyUpdates": true,
+          "weeklyUpdatesRadius": 25,
+          "statusEmails": true,
+          "contactHelpDisasterRecovery": true,
+          "contactDonateDisasterRelief": false,
+          "notifyUpcomingVolunteeredProjects": false,
+          "notifyUpcomingVolunteeredProjectsDaysPrior": 0,
+          "notifyByMobilePhone": false
+        },
+        "interests": {
+          "modified": "2026-07-15T16:39:44Z",
+          "ids": [
+            "11",
+            "17",
+            "20",
+            "26",
+            "32"
+          ]
+        },
+        "skills": {
+          "modified": "2026-07-15T16:39:44Z",
+          "ids": [
+            "1",
+            "101",
+            "105",
+            "109",
+            "113"
+          ]
+        },
+        "tools": {
+          "modified": "2026-07-15T16:39:44Z",
+          "ids": []
+        },
+        "daysOfTheWeek": {
+          "modified": "2026-07-15T16:39:44Z",
+          "ids": []
+        },
+        "timesOfDay": {
+          "modified": "2026-07-15T16:39:44Z",
+          "ids": []
+        },
+        "favoriteOrganizations": {
+          "ids": [],
+          "modified": "0001-01-01T00:00:00Z"
+        },
+        "favoriteProjects": {
+          "ids": [],
+          "modified": "0001-01-01T00:00:00Z"
+        },
+        "volunteeredEvents": []
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

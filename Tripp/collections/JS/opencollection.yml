@@ -13,11 +13,6 @@ config:
         username: ""
         password: ""
       bypassProxy: ""
-
-request:
-  auth:
-    type: bearer
-    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1M2EwOGQxNi1hMmY4LTQzNmYtYTZkNi03ZGVhMGU4OTA1NDciLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiNTNhMDhkMTYtYTJmOC00MzZmLWE2ZDYtN2RlYTBlODkwNTQ3IiwianRpIjoiYzFmNGMzNTEtM2Q4NC00YjFmLTliZWUtMThjMWQ4MTZlNGFhIiwiZW1haWwiOiJ0cmlwcG50ZWNobm9sb2d5QGdtYWlsLmNvbSIsImV4dGVybmFsX2lkIjoiNTNhMDhkMTYtYTJmOC00MzZmLWE2ZDYtN2RlYTBlODkwNTQ3IiwibmFtZSI6IlRyaXBwJ24gVGVjaG5vbG9neSIsIm5iZiI6MTc3MzQ0MDEwOSwiZXhwIjoxNzc2MDMyNDA5LCJpc3MiOiJodHRwczovL3d3dy5qdXN0c2VydmUub3JnIn0.K8qov_MPyhAkd-lpAgiysvW498UJLaCZUrKgoBNqQr0
 bundled: false
 extensions:
   bruno:

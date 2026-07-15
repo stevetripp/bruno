@@ -1,0 +1,26 @@
+info:
+  name: 04 /temples/{templeOrgId}/substitution/open
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{CORE_WS_URL}}/temples/{{TEMPLE_ORG_ID}}/substitution/open"
+  body:
+    type: json
+    data: |-
+      {
+        "templeOrgId": 5001001,
+        "startDate": "2026-05-11",
+        "endDate": "2026-07-07",
+        "excludedWorkerId":  {{WORKER4_ID}},
+        "matchingWorkerId": null,
+        "onlyMatchingProfiles": false
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

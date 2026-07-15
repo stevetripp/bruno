@@ -1,0 +1,18 @@
+info:
+  name: v1/token/verify
+  type: http
+  seq: 8
+
+http:
+  method: POST
+  url: "{{BASE_URL}}v1/token/verify"
+  headers:
+    - name: Content-Type
+      value: application/json
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

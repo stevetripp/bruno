@@ -6,6 +6,18 @@ info:
 http:
   method: PATCH
   url: "{{BASE_URL}}/api/mobile/v1/me/profile"
+  body:
+    type: json
+    data: |-
+      {
+        "userId": "08e57f98-7796-4518-934b-9d19cb6ea955",
+        "firstName": "Volunteer",
+        "lastName": "Five",
+        "preferredCommunication": "EMAIL",
+        "phone": "555-555-5555",
+        "isPhoneTextable": true,
+        "email": "five@tsv.domain.com"
+      }
   auth: inherit
 
 settings:

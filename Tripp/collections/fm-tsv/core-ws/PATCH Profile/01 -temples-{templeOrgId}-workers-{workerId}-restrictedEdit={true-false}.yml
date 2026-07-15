@@ -1,0 +1,73 @@
+info:
+  name: 01 /temples/{templeOrgId}/workers/{workerId}?restrictedEdit={true|false}
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: "{{CORE_WS_URL}}/temples/{{TEMPLE_ORG_ID}}/workers/{{WORKER4_ID}}?restrictedEdit=false"
+  params:
+    - name: restrictedEdit
+      value: "false"
+      type: query
+  body:
+    type: json
+    data: |-
+      {
+        "workerId": 9107,
+        "personUuid": "5a449af6-a84f-4016-98e5-77d4017b8454",
+        "cmisId": 3635381007,
+        "preferredName": "Four, Volunteer",
+        "address": null,
+        "householdPhone": {
+          "workerId": 9107,
+          "contactType": "PHONE",
+          "contactValue": "666-666-6665",
+          "contactLabel": "HOUSEHOLD",
+          "textOk": true,
+          "preferred": true,
+          "createdDate": null
+        },
+        "personalPhone": {
+          "workerId": 9107,
+          "contactType": "PHONE",
+          "contactValue": "555-555-5554",
+          "contactLabel": "PERSONAL",
+          "textOk": true,
+          "preferred": false,
+          "createdDate": null
+        },
+        "email": {
+          "workerId": 9107,
+          "contactType": "EMAIL",
+          "contactValue": "foo@domain.com",
+          "contactLabel": "PERSONAL",
+          "textOk": null,
+          "preferred": true,
+          "createdDate": null
+        },
+        "spouseWorkerId": null,
+        "spousePreferredName": null,
+        "workerImageId": null,
+        "emergencyContactName": null,
+        "emergencyContactPhone": null,
+        "emergencyContactSource": "TEMPLE",
+        "lockerNumber": "695",
+        "lastInterviewDate": null,
+        "notes": null,
+        "workerAdditionalContactInfo": null,
+        "childProtectionComplete": false,
+        "childProtectionCompletion": null,
+        "childProtectionExpiration": null,
+        "gender": "MALE",
+        "cmisCheckCount": null,
+        "preferredContactMedium": "LINE",
+        "eligible": true
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

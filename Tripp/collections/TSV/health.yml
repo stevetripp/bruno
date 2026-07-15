@@ -1,11 +1,11 @@
 info:
-  name: health
+  name: /health
   type: http
   seq: 9
 
 http:
   method: GET
-  url: "{{BASE_URL}}/api/mobile/v1/me/context"
+  url: "{{BASE_URL}}/actuator/health"
   auth: inherit
 
 settings:

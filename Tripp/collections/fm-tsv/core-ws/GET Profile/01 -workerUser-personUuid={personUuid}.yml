@@ -1,0 +1,19 @@
+info:
+  name: 01 /workerUser?personUuid={personUuid}
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: "{{CORE_WS_URL}}/workerUser?personUuid=fca98e3b-ed7a-438d-b89f-2df2ee4a3bd9"
+  params:
+    - name: personUuid
+      value: fca98e3b-ed7a-438d-b89f-2df2ee4a3bd9
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

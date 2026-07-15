@@ -5,14 +5,17 @@ meta {
 }
 
 get {
-  url: {{base_url}}v1/kids/scripturestories?lang=eng&isPreview=false
+  url: {{base_url}}v1/kids/scripturestories?lang=spa&cb=2&isPreview=true
   body: none
   auth: inherit
 }
 
 params:query {
-  lang: eng
-  isPreview: false
+  lang: spa
+  cb: 2
+  isPreview: true
+  ~lang: eng
+  ~lang: por
 }
 
 headers {

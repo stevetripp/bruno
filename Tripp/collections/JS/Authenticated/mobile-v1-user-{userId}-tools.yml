@@ -1,0 +1,15 @@
+info:
+  name: mobile/v1/user/{userId}/tools
+  type: http
+  seq: 5
+
+http:
+  method: GET
+  url: "{{BASE_URL}}mobile/v1/user/{{USER_ID}}/tools"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -2,3 +2,9 @@ name: STAGE
 variables:
   - name: BASE_URL
     value: https://templeworkercore-service-stage.churchofjesuschrist.org/api/v2
+  - name: CORE_WS_URL
+    value: https://fm-tsv-core-ws-stage.pvu.cf.churchofjesuschrist.org/api/v2
+  - name: PERSON4_UUID
+    value: 5a449af6-a84f-4016-98e5-77d4017b8454
+  - name: TEMPLE_ORG_ID
+    value: "5001001"

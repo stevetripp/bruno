@@ -1,0 +1,22 @@
+info:
+  name: mobile/v2/projects
+  type: http
+  seq: 9
+
+http:
+  method: POST
+  url: "{{BASE_URL}}mobile/v2/projects"
+  body:
+    type: json
+    data: |-
+      {
+        "ids": [
+          "55720a36-6dfd-41d6-9ad6-ce17e405b07d"
+        ]
+      }
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

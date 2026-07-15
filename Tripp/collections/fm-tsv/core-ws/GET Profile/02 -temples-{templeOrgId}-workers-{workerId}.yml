@@ -1,0 +1,15 @@
+info:
+  name: 02 /temples/{templeOrgId}/workers/{workerId}
+  type: http
+  seq: 2
+
+http:
+  method: GET
+  url: "{{CORE_WS_URL}}/temples/{{TEMPLE_ORG_ID}}/workers/9104"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

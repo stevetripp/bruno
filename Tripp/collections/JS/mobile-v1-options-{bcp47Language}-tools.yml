@@ -1,0 +1,14 @@
+info:
+  name: mobile/v1/options/{bcp47Language}/tools
+  type: http
+  seq: 4
+
+http:
+  method: GET
+  url: "{{BASE_URL}}mobile/v1/options/en-us/tools"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

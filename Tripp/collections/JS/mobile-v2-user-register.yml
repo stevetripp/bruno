@@ -1,0 +1,29 @@
+info:
+  name: mobile/v2/user/register
+  type: http
+  seq: 7
+
+http:
+  method: POST
+  url: "{{BASE_URL}}mobile/v2/user/register"
+  body:
+    type: json
+    data: |-
+      {
+        "firstName": "test",
+        "lastName": "user3",
+        "email": "test.user3@domain.com",
+        "password": "Passw0rd!",
+        "postal": "84020",
+        "language": "en-US",
+        "clientId": "Android",
+        "clientSecret": "da18918e-38b3-467f-9fd2-fe2fb1b28fe7",
+        "country": "United States",
+        "countryCode": "usa"
+      }
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,20 @@
+info:
+  name: 01 /schedule/{templeOrgId}/shift/{shiftId}/{gender}/{shiftDate}?userPersonUuid={userPersonUuid}
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: "{{SCHEDULING_WS_URL}}/schedule/{{TEMPLE_ORG_ID}}/shift/9508/BOTH/2026-05-12"
+  params:
+    - name: userPersonUuid
+      value: "{{PERSON4_UUID}}"
+      type: query
+      disabled: true
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,14 @@
+info:
+  name: mobile/v1/options/{bcp47Language}/countries
+  type: http
+  seq: 6
+
+http:
+  method: GET
+  url: "{{BASE_URL}}mobile/v1/options/en-us/countries"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

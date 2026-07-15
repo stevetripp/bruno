@@ -5,14 +5,16 @@ meta {
 }
 
 get {
-  url: {{base_url}}v1/kids/playalongsongs?lang=eng&isPreview=false
+  url: {{base_url}}v1/kids/playalongsongs?lang=spa
   body: none
   auth: inherit
 }
 
 params:query {
-  lang: eng
-  isPreview: false
+  lang: spa
+  ~isPreview: true
+  ~lang: eng
+  ~lang: por
 }
 
 headers {

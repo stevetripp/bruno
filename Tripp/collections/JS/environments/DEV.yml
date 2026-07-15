@@ -1,0 +1,8 @@
+name: DEV
+variables:
+  - name: BASE_URL
+    value: https://dev-mobile.justserve.org/api/
+  - name: BASE_URL_SANS_MOBILE
+    value: https://dev-mobile.justserve.org/api/
+  - name: CDN_BASE_URL
+    value: https://cdn.churchofjesuschrist.org/

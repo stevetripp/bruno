@@ -1,0 +1,8 @@
+name: STAGE
+variables:
+  - name: BASE_URL
+    value: https://stage.justserve.org/api/mobile/
+  - name: CLIENT_ID
+    value: Android
+  - name: SECRET
+    value: da18918e-38b3-467f-9fd2-fe2fb1b28fe7

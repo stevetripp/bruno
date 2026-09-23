@@ -5,9 +5,13 @@ meta {
 }
 
 get {
-  url: {{Base_URL}}/appStopInfo.json
+  url: {{Base_URL}}/appStopInfo.json?cb=2
   body: none
   auth: inherit
+}
+
+params:query {
+  cb: 2
 }
 
 settings {

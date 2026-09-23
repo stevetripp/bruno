@@ -1,0 +1,4 @@
+name: PROD_REDIRECT
+variables:
+  - name: BASE_URL
+    value: https://e3aec98ff46e492490e46fbea006e0b3.justserve.org/api/

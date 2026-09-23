@@ -1,0 +1,40 @@
+info:
+  name: "mobile/v2/projects/search "
+  type: http
+  seq: 12
+
+http:
+  method: POST
+  url: "{{BASE_URL}}mobile/v2/projects/search"
+  headers:
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+        "latitude": 40.5045045045045,
+        "longitude": -111.896537471545,
+        "location": "",
+        "keywords": "",
+        "searchRadius": 25,
+        "distanceUnits": "MILES",
+        "startDate": null,
+        "endDate": null,
+        "projectOptions": {},
+        "skillIds": [],
+        "interestIds": [],
+        "language": "en-US",
+        "sortBy": "MOST_RELEVANT",
+        "page": 0,
+        "size": 90,
+        "country": null,
+        "includeFilledProjects": false
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

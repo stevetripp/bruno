@@ -20,6 +20,8 @@ collections:
     path: "collections/TSV"
   - name: "fm-tsv"
     path: "collections/fm-tsv"
+  - name: "PB"
+    path: "collections/PB"
 
 specs:
 

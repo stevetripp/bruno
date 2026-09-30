@@ -1,0 +1,5 @@
+name: STAGE
+variables:
+  - name: BASE_URL
+    value: https://pb-stage.churchofjesuschrist.org/api/pbsubmit
+    description: ""
